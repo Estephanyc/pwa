@@ -60,7 +60,6 @@ self.addEventListener('push', function(event) {
     icon: 'images/icon.png',
     badge: 'images/badge.png'
   };
-  self.registration.showNotification(title, options);
 
   const notificationPromise = self.registration.showNotification(title, options);
   event.waitUntil(notificationPromise);
