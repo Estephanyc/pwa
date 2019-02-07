@@ -418,7 +418,7 @@
       document.querySelector('.js-subscription-details');
   
     if (subscription) {
-      subscriptionJson.textContent = JSON.stringify(subscription);
+      subscriptionJson.value= JSON.stringify(subscription);
       subscriptionDetails.classList.remove('is-invisible');
     } else {
       subscriptionDetails.classList.add('is-invisible');
